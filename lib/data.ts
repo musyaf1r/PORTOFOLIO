@@ -1,7 +1,6 @@
-// Semua isi portofolio ada di file ini. Ubah teks di sini, tampilan ikut berubah.
 
 export const profile = {
-  name: "Satrya Khanzaz",
+  name: "Satrya Khanza",
   fullName: "Satrya Khanzaz Al-Faruq Kurniawan",
   nickname: "AL",
   role: "Student developer di SMK Telkom Malang",
