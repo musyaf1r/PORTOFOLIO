@@ -1,8 +1,9 @@
-import type { CSSProperties } from "react";
 import Bubbles from "@/components/Bubbles";
 import DepthGauge from "@/components/DepthGauge";
 import Waves from "@/components/Waves";
 import { contacts, profile, projects, stack } from "@/lib/data";
+import type { CSSProperties } from "react";
+
 
 const step = (i: number) => ({ "--i": i }) as CSSProperties;
 
@@ -26,7 +27,6 @@ export default function Page() {
       <DepthGauge />
 
       <main>
-        {/* Permukaan */}
         <section id="top" className="hero">
           <div className="sun" aria-hidden="true" />
           <div className="hero-inner">
@@ -51,8 +51,6 @@ export default function Page() {
           </div>
           <Waves />
         </section>
-
-        {/* Di bawah permukaan */}
         <div className="dive">
           <Bubbles />
 
@@ -109,7 +107,7 @@ export default function Page() {
               <h2>Teknologi yang saya pakai</h2>
               <div className="stack-groups">
                 {stack.map((g) => (
-                  <div key={g.title} className="stack-group">
+                  <div key={g.title} className="stack-group hover:cursor-pointer">
                     <h3>{g.title}</h3>
                     <ul className="chips">
                       {g.items.map((item) => {
